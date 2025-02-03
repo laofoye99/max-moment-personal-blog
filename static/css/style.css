@@ -1,0 +1,110 @@
+.top-nav-bar {
+    height: 57px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c9c0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.top-nav-bar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    width: 1134px;
+}
+
+.menu-icon {
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    margin-right: 24px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.top-nav-bar-logo {
+    height: auto;
+    width: 113px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 240px;
+    display: flex;
+    position: relative;
+    margin-left: 24px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: 1px solid #c6c9c0;
+    border-radius: 30px;
+    padding: 12px 20px 12px 40px;
+    font-size: 16px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+
+}
+
+.top-nav-bar-right {
+    display: flex;
+    height: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.bell-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.bell-icon:hover {
+    color: #ffcc00;
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 6px;
+    height:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border:0 solid white;
+}

@@ -1,14 +1,11 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    Top of baseof
-    <hr>
-    {{ block "main" .}}
-    {{ end }}
-    <hr>
-    Bottom of baseof
+    {{partial "header.html" . }}
+
 </body>

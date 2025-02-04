@@ -1,0 +1,11 @@
+{{ if .Paginator }}
+<div class="pagination">
+    {{ range .Paginator.Pagers }}
+    <a 
+    href="{{ .URL }}" 
+    class="pagination-link {{ if eq .PageNumber $.Paginator.PageNumber }}active{{ end }}">
+        {{ .PageNumber }}
+    </a>
+    {{ end }}
+</div>
+{{ end }}

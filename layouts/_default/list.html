@@ -1,3 +1,6 @@
 {{define "main" }}
-    <p>This is a list template.</p>
+<div class="main-content">
+    {{ partial "articles.html" . }}
+    {{ partial "personal-info.html" . }}
+</div>
 {{ end }}

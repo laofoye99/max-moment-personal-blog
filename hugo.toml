@@ -1,3 +1,9 @@
 baseURL = 'https://max-moment.pages.dev/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+pagination.pagerSize = 5
+pagination.path = "page"
+[params]
+mainSection = ['post']
+orderByDate = 'desc'

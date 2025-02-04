@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <title>Welcome to My Site</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/sidebar.js" defer></script>
 </head>
 <body>
     <header class="top-nav-bar">
     <div class="top-nav-bar-left">
-        <img src="/images/view_list.svg" alt="Menu" class="menu-icon">
+        <img src="/images/view_list.svg" alt="Menu" class="menu-icon" id="menuButton">
         <img src="/images/logo.svg" alt="logo" class="top-nav-bar-logo">
         <div class="search-bar">
             <input type="text" placeholder="Search">
@@ -22,4 +23,143 @@
     </div>
 </header>
 
+<div class="sidebar-menu" id="sidebar-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+</div>
+
+<div class="overlay" id="overlay"></div>
+    
+<div class="main-content">
+    <div class="articles">
+    <div class="articles-space"></div>
+    
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="http://localhost:1313/blog/b/" 
+                class="text-content-title">
+                My First Blog Post
+                </a>
+            </h2>
+            <p>First Blog Post</p>
+            <p><small>By Max on Feb 02, 3030</small></p>
+        </div>
+        <div class="image-content">
+            <img src="/images/avatar.jpeg" alt="My First Blog Post">
+        </div>
+    </div>
+    
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="http://localhost:1313/blog/c/" 
+                class="text-content-title">
+                My First Blog Post
+                </a>
+            </h2>
+            <p>First Blog Post</p>
+            <p><small>By Max on Feb 02, 3030</small></p>
+        </div>
+        <div class="image-content">
+            <img src="/images/avatar.jpeg" alt="My First Blog Post">
+        </div>
+    </div>
+    
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="http://localhost:1313/blog/d/" 
+                class="text-content-title">
+                My First Blog Post
+                </a>
+            </h2>
+            <p>First Blog Post</p>
+            <p><small>By Max on Feb 02, 3030</small></p>
+        </div>
+        <div class="image-content">
+            <img src="/images/avatar.jpeg" alt="My First Blog Post">
+        </div>
+    </div>
+    
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="http://localhost:1313/blog/e/" 
+                class="text-content-title">
+                My First Blog Post
+                </a>
+            </h2>
+            <p>First Blog Post</p>
+            <p><small>By Max on Feb 02, 3030</small></p>
+        </div>
+        <div class="image-content">
+            <img src="/images/avatar.jpeg" alt="My First Blog Post">
+        </div>
+    </div>
+    
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="http://localhost:1313/blog/f/" 
+                class="text-content-title">
+                My First Blog Post
+                </a>
+            </h2>
+            <p>First Blog Post</p>
+            <p><small>By Max on Feb 02, 3030</small></p>
+        </div>
+        <div class="image-content">
+            <img src="/images/avatar.jpeg" alt="My First Blog Post">
+        </div>
+    </div>
+    
+    
+<div class="pagination">
+    
+    <a 
+    href="/" 
+    class="pagination-link active">
+        1
+    </a>
+    
+    <a 
+    href="/page/2/" 
+    class="pagination-link ">
+        2
+    </a>
+    
+    <a 
+    href="/page/3/" 
+    class="pagination-link ">
+        3
+    </a>
+    
+    <a 
+    href="/page/4/" 
+    class="pagination-link ">
+        4
+    </a>
+    
+</div>
+
+</div>
+    <div class="personal-info">
+    <h3>About Me</h3>
+    <p>This is a short bio or personal introduction.</p>
+</div>
+</div>
+
+    <footer>
+    <div class="bottom-nav-bar">
+        <p>&copy; 2025 All rights reserved.</a></p>
+    </div>
+</footer>
 </body>
+</html>

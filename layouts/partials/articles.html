@@ -1,0 +1,22 @@
+<div class="articles">
+    <div class="articles-space"></div>
+    {{ range .Paginator.Pages }}
+    <div class="articles-card">
+        <div class="text-content">
+            <h2>
+                <a 
+                href="{{ .Permalink }}" 
+                class="text-content-title">
+                {{ .Title }}
+                </a>
+            </h2>
+            <p>{{ .Params.description }}</p>
+            <p><small>By {{ .Params.author }} on {{ .Date.Format "Jan 01, 2025"}}</small></p>
+        </div>
+        <div class="image-content">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        </div>
+    </div>
+    {{ end }}
+    {{partial "pagination.html" . }}
+</div>

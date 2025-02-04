@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/sidebar.js" defer></script>
 </head>
 <body>
     {{partial "header.html" . }}
-
+    {{ block "main" . }}{{ end }}
+    {{partial "footer.html" . }}
 </body>
+</html>

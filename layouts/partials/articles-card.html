@@ -1,0 +1,12 @@
+<a href="{{ .Permalink }}">
+    <div class="articles-card" id="articles-card">
+        <div class="articles-card-left" id="articles-card-left">
+            <h2 id="articles-title">{{ .Params.title }}</h2>
+            <p id="articles-description">{{ .Params.description }}</p>
+            <p><small id="articles-author&date">By {{ .Params.author }} on {{ .Date.Format "Jan 02, 2006"}}</small></p>
+        </div>
+        <div class="articles-card-right" id="articles-card-right">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" id="articles-image">
+        </div>
+    </div>
+</a>

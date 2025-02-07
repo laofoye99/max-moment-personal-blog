@@ -2,7 +2,7 @@ baseURL = 'https://max-moment.pages.dev/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-pagination.pagerSize = 5
+pagination.pagerSize = 10
 pagination.path = "page"
 [params]
 mainSection = ['post']

@@ -1,10 +1,8 @@
----
-title: "My First Blog Post Created Using AI Chatbot"
-author: "Max"
-description: "First Blog Post, it is my first blog post and what else I am so exciting now, I finally achieved this goal in just a few days, that's amazing. What a magic work it is."
-date: 2025-02-02
-image: "/images/avatar.jpeg"
-category: "Python"
----
-
-This is the content of my first blog post.
++++
+title = "My first Blog"
+date = "2021-01-01T23:44:58-08:00"
+author = "Max"
+description = "This is a test Markdown file for my articles-card section."
+image = "images/avatar.jpeg"
++++
+This is my first markdown blog.

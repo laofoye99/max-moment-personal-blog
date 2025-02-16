@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <title>First Class for front end</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/sidebar.js" defer></script>
+</head>
+<body>
+    <header class="top-nav-bar">
+    <div class="top-nav-bar-left">
+        <img src="/images/view_list.svg" alt="Menu" class="menu-icon" id="menuButton">
+        <a href='/'><img src="/images/logo.svg" alt="logo" class="top-nav-bar-logo"></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <img src="/images/search-icon.svg" alt="Search">
+        </div>
+    </div>
+    <div class="top-nav-bar-right">
+        <img src="/images/bell-icon.svg" alt="Notification" class="bell-icon">
+        <img src="/images/avatar.jpeg" alt="Profile" class="profile-pic">
+    </div>
+</header>
+
+<div class="sidebar-menu" id="sidebar-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+</div>
+
+<div class="overlay" id="overlay"></div>
+    
+<div class="articles-page">
+    <div class="articles-page-toc">
+        <h2>Table of Contents</h2>
+        <div class="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#introduction-to-html">Introduction to HTML</a>
+      <ol>
+        <li><a href="#basic-structure-of-an-html-document">Basic Structure of an HTML Document</a>
+          <ol>
+            <li><a href="#explanation-of-the-structure">Explanation of the Structure:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#common-html-elements">Common HTML Elements</a>
+      <ol>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+        <li><a href="#preformatted-text">Preformatted text</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#list">List</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#div">Div</a></li>
+        <li><a href="#span">Span</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </div>
+    <div class="articles-page-content">
+        <section class="articles-post">
+            <h1>First Class for front end</h1>
+            <p class="post-meta">
+                <span>By Max</span>
+                
+                    
+                    
+                    <span> | Published on </span>
+                    <time datetime="2025-02-07T20:35:36&#43;08:00">February 7, 2025</time>
+                
+            </p>
+            
+            <p>
+                Tags:
+                
+                    <span class="tag">front-end</span>
+                
+                    <span class="tag">beginner</span>
+                
+                    <span class="tag">HTML</span>
+                
+            </p>
+            
+            <article>
+                <h1 id="preface">Preface</h1>
+<p>My Name is Max, and I currently work as an AI R&amp;D Engineer (Artificial Intelligence Research and Development Engineer). Graduating from a non-computer science background, my prior knowledge of front-end development was quite limited. This section is primarily intended to document my journey of quick self-learning front-end development and building a personal blog webpage. It will also serve as a reference for future optimizations and functional improvements to my personal website.</p>
+<h1 id="introduction-to-html">Introduction to HTML</h1>
+<p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It defines the structure of a website using elements and tags. This blog will guide you from the basic of HTML to quick go through its elements, attributes, and practical exercises.</p>
+<hr>
+<h2 id="basic-structure-of-an-html-document">Basic Structure of an HTML Document</h2>
+<p>Every HTML document starts with a basic structure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h3 id="explanation-of-the-structure">Explanation of the Structure:</h3>
+<ul>
+<li>
+<!-- raw HTML omitted -->
+</li>
+<li>
+<!-- raw HTML omitted -->
+</li>
+<li>
+<!-- raw HTML omitted -->
+</li>
+<li>
+<!-- raw HTML omitted -->
+</li>
+</ul>
+<hr>
+<h1 id="common-html-elements">Common HTML Elements</h1>
+<h2 id="headings">Headings</h2>
+<p>Predefined font size.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;First Level Heading&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span>&gt;Second Level Heading&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h3</span>&gt;Third Level Heading&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h4</span>&gt;Forth Level Heading&lt;/<span style="color:#f92672">h4</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h5</span>&gt;Fifth Level Heading&lt;/<span style="color:#f92672">h5</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h6</span>&gt;Sixth Level Heading&lt;/<span style="color:#f92672">h6</span>&gt;
+</span></span></code></pre></div><h2 id="paragraphs">Paragraphs</h2>
+<p>display content in default style.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;This is a paragraph. It will display content in default style.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h2 id="preformatted-text">Preformatted text</h2>
+<p>display content in precise formatting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">pre</span>&gt;
+</span></span><span style="display:flex;"><span>    This is a poem:
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    Because I could not stop for Death,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    He kindly stopped for me;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    The carriage held but just ourselves
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    And Immortality. 
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">pre</span>&gt;
+</span></span></code></pre></div><h2 id="links">Links</h2>
+<p>used to create hyperlinks to other pages or resources.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;links&#34;</span>&gt;{{block}}&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><h2 id="images">Images</h2>
+<p>used to embed images.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/image.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Description of the image&#34;</span>&gt;
+</span></span></code></pre></div><h2 id="list">List</h2>
+<ul>
+<li>Unordered List(<!-- raw HTML omitted -->): Creates bullet-points lists.</li>
+<li>Ordered List(<!-- raw HTML omitted -->): Creates numbered lists.</li>
+</ul>
+<blockquote>
+<p><code>&lt;li&gt;</code> represents a list item.</p></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Item 1&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Item 2&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Item 3&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">ol</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Step 1&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Step 2&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">li</span>&gt;Step 3&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ol</span>&gt;
+</span></span></code></pre></div><h2 id="tables">Tables</h2>
+<p>Used to display data in rows and in columns.</p>
+<blockquote>
+<p><code>&lt;th&gt;</code> Defines a table header cell, usually bold and centered by default, to describe columns or rows in a table.
+<code>&lt;td&gt;</code> Represents a standard table cell, used to hold data within a table.</p></blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">th</span>&gt;Column 1&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">th</span>&gt;Column 2&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">td</span>&gt;Data 1&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">td</span>&gt;Data 2&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><h2 id="forms">Forms</h2>
+<h2 id="div">Div</h2>
+<h2 id="span">Span</h2>
+
+            </article>
+        </section>
+    </div>
+</div>
+
+    <footer>
+    <div class="bottom-nav-bar">
+        <p>&copy; 2025 All rights reserved.</a></p>
+    </div>
+</footer>
+</body>
+</html>

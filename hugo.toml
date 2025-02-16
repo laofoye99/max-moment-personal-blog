@@ -7,3 +7,23 @@ pagination.path = "page"
 [params]
 mainSection = ['post']
 orderByDate = 'desc'
+[markup]
+[markup.tableOfContents]
+startLevel = 1
+endLevel = 6
+ordered = true
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+
+[permalinks]
+posts = '/:slug/'

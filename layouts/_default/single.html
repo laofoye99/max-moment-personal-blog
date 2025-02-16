@@ -1,3 +1,35 @@
 {{define "main" }}
-    <p>This is a single template.</p>
+<div class="articles-page">
+    <div class="articles-page-toc">
+        <h2>Table of Contents</h2>
+        <div class="toc">
+        {{ .TableOfContents }}
+        </div>
+    </div>
+    <div class="articles-page-content">
+        <section class="articles-post">
+            <h1>{{ .Title }}</h1>
+            <p class="post-meta">
+                <span>By {{ .Params.author }}</span>
+                {{ with .Date }}
+                    {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00"}}
+                    {{ $dateHuman := . | time.Format ":date_long" }}
+                    <span> | Published on </span>
+                    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                {{ end }}
+            </p>
+            {{ with .Params.tags }}
+            <p>
+                Tags:
+                {{ range . }}
+                    <span class="tag">{{ . }}</span>
+                {{ end }}
+            </p>
+            {{ end }}
+            <article>
+                {{ .Content }}
+            </article>
+        </section>
+    </div>
+</div>
 {{ end }}

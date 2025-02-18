@@ -27,5 +27,7 @@
     <lastmod>2021-01-01T23:44:58-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rdp-algorithm/</loc>
   </url>
 </urlset>

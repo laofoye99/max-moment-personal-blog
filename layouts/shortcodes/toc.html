@@ -1,5 +1,6 @@
 {{ if .Page.TableOfContents }}
-<nav id="TableOfContents">
+<link rel="stylesheet" href="/css/single-page.css">
+<nav id="TableOfContents" class="toc">
     <h2>Table of Contents</h2>
     {{ .Page.TableOfContents | markdownify }}
 </nav>

@@ -16,6 +16,8 @@ isCJKLanguage = false
 
 My Name is Max, and I currently work as an AI R&D Engineer (Artificial Intelligence Research and Development Engineer). Graduating from a non-computer science background, my prior knowledge of front-end development was quite limited. This section is primarily intended to document my journey of quick self-learning front-end development and building a personal blog webpage. It will also serve as a reference for future optimizations and functional improvements to my personal website.
 
+---
+
 # Introduction to HTML
 
 HTML (HyperText Markup Language) is the standard markup language used to create web pages. It defines the structure of a website using elements and tags. This blog will guide you from the basic of HTML to quick go through its elements, attributes, and practical exercises. 
@@ -25,22 +27,25 @@ HTML (HyperText Markup Language) is the standard markup language used to create 
 ## Basic Structure of an HTML Document
 
 Every HTML document starts with a basic structure:
+
 ```html
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Head of your webpage -->
     </head>
     <body>
+        <!-- Visible section in the webpage -->
     </body>
 </html>
 ```
 
 ### Explanation of the Structure:
 
-- <!DOCTYPE html>: Declares the document type as HTML.
-- <html>: the root element that wraps all content on the page.
-- <head>: Contains metadata, these content will not be displayed in the visible area of the web page.
-- <body>: Contains the visible content of the web page.
+- `<!DOCTYPE html>`: Declares the document type as HTML.
+- `<html>`: the root element that wraps all content on the page.
+- `<head>`: Contains metadata, these content will not be displayed in the visible area of the web page.
+- `<body>`: Contains the visible content of the web page.
 
 ---
 
@@ -58,12 +63,16 @@ Predefined font size.
 <h6>Sixth Level Heading</h6>
 ```
 
+---
+
 ## Paragraphs
 
 display content in default style.
 ```html
 <p>This is a paragraph. It will display content in default style.</p>
 ```
+
+---
 
 ## Preformatted text
 
@@ -82,6 +91,8 @@ display content in precise formatting.
 </pre>
 ```
 
+--
+
 ## Links
 
 used to create hyperlinks to other pages or resources.
@@ -89,12 +100,16 @@ used to create hyperlinks to other pages or resources.
 <a href="links">{{block}}</a>
 ```
 
+---
+
 ## Images
 
 used to embed images.
 ```html
 <img src="/path/to/image.jpg" alt="Description of the image">
 ```
+
+---
 
 ## List
 
@@ -114,11 +129,14 @@ used to embed images.
 </ol>
 ```
 
+---
+
 ## Tables
 
 Used to display data in rows and in columns.
 > `<th>` Defines a table header cell, usually bold and centered by default, to describe columns or rows in a table.
 > `<td>` Represents a standard table cell, used to hold data within a table.
+
 ```html
 <table>
     <tr>
@@ -131,6 +149,17 @@ Used to display data in rows and in columns.
     </tr>
 </table>
 ```
+
+---
+
 ## Forms
+
+---
+
 ## Div
+
+---
+
 ## Span
+
+---

@@ -1,0 +1,31 @@
+.articles-page-toc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: sticky;
+    top: 57px;
+    width: 243px;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid #c6c9c0;
+    flex-wrap: wrap;
+    overflow: unset;
+}
+
+.articles-page-toc ol {
+    padding-left: auto;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    padding-inline-start: 14px;
+}
+
+.articles-page-toc a {
+    color: #5e5e5e;
+    margin-bottom: 8px;
+    font-size: 16px;
+    text-decoration: none;
+}

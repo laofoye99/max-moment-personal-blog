@@ -1,15 +1,10 @@
 {{define "main" }}
 <div class="articles-page">
-    <div class="articles-page-toc">
-        <h2>Table of Contents</h2>
-        <div class="toc">
-        {{ .TableOfContents }}
-        </div>
-    </div>
+    {{ partial "single-toc.html" . }}
     <div class="articles-page-content">
         <section class="articles-post">
             <h1>{{ .Title }}</h1>
-            <p class="post-meta">
+            <p>
                 <span>By {{ .Params.author }}</span>
                 {{ with .Date }}
                     {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00"}}
@@ -22,11 +17,11 @@
             <p>
                 Tags:
                 {{ range . }}
-                    <span class="tag">{{ . }}</span>
+                    <span>{{ . }}</span>
                 {{ end }}
             </p>
             {{ end }}
-            <article>
+            <article class="articles-page-text">
                 {{ .Content }}
             </article>
         </section>
